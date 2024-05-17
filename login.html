@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <title>Вход</title>
+    <style>
+        body {
+			background-image: url(assets/img/background.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .auth-container {
+            width: 400px;
+            background-color: #fff;
+			opacity: 0.9;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Добавлено для центрирования кнопок */
+        }
+
+        .btn {
+            background-color: #ca2020;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Добавлено для отступа между кнопками */
+        }
+
+        .active {
+            background-color: #ca2020;
+        }
+
+        .form-container {
+            display: none;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="auth-container">
+	<h2 class="h2">Пользователь, что вы хотите сделать?</h2>
+    <button class="btn active" onclick="toggleForm('registration')">Зарегистрироваться</button>
+    <button class="btn" onclick="toggleForm('login')">Авторизоваться</button>
+
+
+    <div id="registration" class="form-container">
+        <h2 class="h2">Регистрация</h2>
+        <form action="register.php" method="POST">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Пароль" name="password" required>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div id="login" class="form-container">
+        <h2 class="h2">Авторизация</h2>
+        <form action="login.php" method="POST" id="loginForm">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Пароль" name="password" required>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    function toggleForm(formName) {
+        var forms = document.getElementsByClassName("form-container");
+        for (var i = 0; i < forms.length; i++) {
+            forms[i].style.display = "none";
+            document.getElementsByClassName("btn")[i].classList.remove("active");
+        }
+        document.getElementById(formName).style.display = "block";
+        document.querySelector('button[data-form="' + formName + '"]').classList.add("active");
+    }
+</script>
+</body>
+</html>

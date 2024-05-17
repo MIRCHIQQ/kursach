@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Каталог</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Specovka
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            
+			    <a class="nav-link" href="shop.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Поддержка</a>
+                        </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Наше местоположение</a>
+                        </li>
+                      </ul>
+                </div>
+                    <a  href="shopping.html"class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    </a>
+                    <a   href="login.html "class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+	
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <h1 class="h2 pb-4">Категории</h1>
+                <ul class="list-unstyled accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Пол
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Сезон
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Вид
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-9">
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="card mb-4 product-wap rounded-0">
+    <div class="card rounded-0">
+        <img class="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg">
+        <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+            <ul class="list-unstyled">
+				<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Жилет светоотражающий')"><i class="fas fa-cart-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+<div class="card-body text-center">
+    <a class="h3 text-decoration-none">Жилет светоотражающий</a>
+    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+        <li class="pt-2">
+            <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+            <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+            <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+            <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+            <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+        </li>
+    </ul>
+    <p class="text-center mb-0">849 ₽</p>
+</div>
+</div>
+                    </div>
+                   <div class="col-md-4">
+    <div class="card mb-4 product-wap rounded-0">
+        <div class="card rounded-0">
+            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_02.jpg">
+            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                <ul class="list-unstyled">
+					<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Перчатки резиновые')"><i class="fas fa-cart-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <a class="h3 text-decoration-none">Перчатки резиновые</a>
+            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                <li class="pt-2">
+                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                </li>
+            </ul>
+            <p class="text-center mb-0">549 ₽</p>
+        </div>
+    </div>
+</div>
+                    <div class="col-md-4">
+    <div class="card mb-4 product-wap rounded-0">
+        <div class="card rounded-0">
+            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_03.jpg">
+            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                <ul class="list-unstyled">
+					<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Накомарник')"><i class="fas fa-cart-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <a class="h3 text-decoration-none">Накомарник</a>
+            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                <li class="pt-2">
+                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                </li>
+            </ul>
+            <p class="text-center mb-0">749 ₽</p>
+        </div>
+    </div>
+</div>
+                 <div class="col-md-4">
+    <div class="card mb-4 product-wap rounded-0">
+        <div class="card rounded-0">
+            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_04.jpg">
+            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                <ul class="list-unstyled">
+					<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Карабин')"><i class="fas fa-cart-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <a class="h3 text-decoration-none">Карабин</a>
+            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                <li class="pt-2">
+                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                </li>
+            </ul>
+            <p class="text-center mb-0">999 ₽</p>
+        </div>
+    </div>
+</div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_05.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                         
+										<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Козырек защитный')"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a class="h3 text-decoration-none">Козырек защитный</a>
+								<ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                 
+                                <p class="text-center mb-0">699 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_06.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                         
+										<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Куртка светоотражающая')"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a class="h3 text-decoration-none">Куртка светоотражающая</a>
+								<ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                 
+                                <p class="text-center mb-0">1249 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_07.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+										<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Комбинезон одноразовый')"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a class="h3 text-decoration-none">Комбинезон одноразовый</a>
+								<ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                 
+                                <p class="text-center mb-0">499 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_08.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+										<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Сапоги резиновые')"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a class="h3 text-decoration-none">Сапоги резиновые</a>
+								<ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                 
+                                <p class="text-center mb-0">999 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_09.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+										<li><a class="btn btn-success text-white mt-2" onclick="addToCart('Халат женский')"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a class="h3 text-decoration-none" 	>Халат женский</a>
+								<ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                 
+                                <p class="text-center mb-0">649 ₽</p>
+                    </div> 
+                </div>
+            </div>
+ </div>
+        </div>
+    </div>
+	 </div>
+   <script>
+        // Функция для добавления товара в корзину
+        function addToCart(productName, imageUrl) {
+            var cartItem = {
+                name: productName,
+                image: imageUrl
+            };
+
+            // Получаем данные о товарах из localStorage
+            var cartItemsJSON = localStorage.getItem('cartItems');
+            
+            // Парсим данные из JSON в массив объектов
+            var cartItems = JSON.parse(cartItemsJSON);
+            
+            // Проверяем, есть ли уже товары в корзине
+            if (cartItems && cartItems.length > 0) {
+                // Добавляем новый товар в корзину
+                cartItems.push(cartItem);
+            } else {
+                // Создаем новый массив корзины с первым товаром
+                cartItems = [cartItem];
+            }
+            
+            // Сохраняем обновленные данные о товарах в localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Переход на страницу корзины
+            window.location.href = 'shopping.html';
+        }
+    </script>
+    <footer class="bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Specovka</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            ул. Пушкина, 45,  Москва
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:+7-900-000-00-00">+7-900-000-00-00</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@specovka.com">info@specovka.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Категории</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Мужчины</a></li>
+                        <li><a class="text-decoration-none" href="#">Женщины</a></li>
+                        <li><a class="text-decoration-none" href="#">Зима</a></li>
+                        <li><a class="text-decoration-none" href="#">Лето</a></li>
+                        <li><a class="text-decoration-none" href="#">Одежда</a></li>
+                        <li><a class="text-decoration-none" href="#">Обувь</a></li>
+                        <li><a class="text-decoration-none" href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Навигация</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Главная</a></li>
+                        <li><a class="text-decoration-none" href="#">Каталог</a></li>
+                        <li><a class="text-decoration-none" href="#">О нас</a></li>
+                        <li><a class="text-decoration-none" href="#">Поддержка</a></li>
+			<li><a class="text-decoration-none" href="#">Наше местоположение</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            ©️SPECOVKA CO., LTD. 2013, 2023 ALL RIGHTS RESERVED
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+	
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

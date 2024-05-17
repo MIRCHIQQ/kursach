@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+    <title>Корзина</title>
+    <style>
+        /* Стили для корзины */
+        .cart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .cart-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .cart-content {
+            font-size: 18px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            margin-right: 10px;
+			color: #ca2020;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Specovka
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+						<a class="nav-link" href="shop.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Поддержка</a>
+                        </li>
+			<li class="nav-item">
+                            <a class="nav-link" href="cart.html">Наше местоположение</a>
+                        </li>
+                    </ul>
+                </div>
+                    <a href="shopping.html" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    </a>
+                    <a  href="login.html "class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="cart-container">
+        <h1 class="cart-title">Корзина</h1>
+        <div class="cart-content" id="cart-items"></div>
+        <button class="btn" onclick="clearCart()">Очистить корзину</button>
+        <button class="btn" onclick="checkout()">Оформить заказ</button>
+    </div>
+    
+
+     <script>
+        // Функция для отображения товаров в корзине
+        function displayCartItems() {
+            var cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = ''; // Очищаем контейнер перед обновлением
+
+            // Получаем данные о товарах из localStorage
+            var cartItemsJSON = localStorage.getItem('cartItems');
+
+            // Парсим данные из JSON в массив объектов
+            var cartItems = JSON.parse(cartItemsJSON);
+
+            // Проверяем, есть ли товары в корзине
+            if (cartItems && cartItems.length > 0) {
+                // Перебираем товары в корзине и создаем элементы для отображения
+                for (var i = 0; i < cartItems.length; i++) {
+                    var cartItem = cartItems[i];
+
+                    // Создаем элемент корзины
+                    var cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item';
+
+                    // Создаем элемент изображения товара
+                    var imageElement = document.createElement('jpg');
+                    imageElement.src = cartItem.image;
+
+                    // Создаем элемент имени товара
+                    var nameElement = document.createElement('span');
+                    nameElement.innerText = cartItem.name;
+
+                    // Добавляем изображение и имя товара в элемент корзины
+                    cartItemElement.appendChild(imageElement);
+                    cartItemElement.appendChild(nameElement);
+
+                    // Добавляем элемент корзины в контейнер
+                    cartItemsContainer.appendChild(cartItemElement);
+                }
+            } else {
+                cartItemsContainer.innerText = 'Ваша корзина пуста';
+            }
+        }
+
+        // Функция для очистки корзины
+        function clearCart() {
+            localStorage.removeItem('cartItems');
+            displayCartItems(); // Обновляем отображение корзины
+        }
+
+        // Функция для оформления заказа
+        function checkout() {
+            // Ваша логика оформления заказа здесь
+            alert('Ваш заказ оформлен! 🎉');
+            clearCart(); // Очищаем корзину после оформления заказа
+        }
+
+        // Вызываем функцию отображения товаров в корзине при загрузке страницы
+        displayCartItems();
+    </script>
+</body>
+</html>

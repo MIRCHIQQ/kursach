@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Поддержка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Specovka
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="shop.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Поддержка</a>
+                        </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Наше местоположение</a>
+                        </li>
+                    </ul>
+                </div>
+                    <a  href="shopping.html" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    </a>
+                    <a  href="login.html "class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid bg-light py-5">
+        <div class="col-md-6 m-auto text-center">
+            <h1 class="h1">Связаться с нами</h1>
+            <p>
+Если у вас возникла какая-либо проблема с использованием сайта или товаром, свяжитесь с нами, и наш консультант обязательно поможет вам в ее решении.
+            </p>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto" method="post" role="form">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputname">Имя</label>
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputemail">Email</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Тема</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Тема">
+                </div>
+                <div class="mb-3">
+                    <label for="inputmessage">Описание</label>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Пожалуйста, опишите вашу проблему..." rows="8"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-end mt-2">
+                        <button type="btn" class="btn btn-success btn-lg px-3" onclick="submit()">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Specovka</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            ул. Пушкина, 45,  Москва
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:+7-900-000-00-00">+7-900-000-00-00</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@specovka.com">info@specovka.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Категории</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Мужчины</a></li>
+                        <li><a class="text-decoration-none" href="#">Женщины</a></li>
+                        <li><a class="text-decoration-none" href="#">Зима</a></li>
+                        <li><a class="text-decoration-none" href="#">Лето</a></li>
+                        <li><a class="text-decoration-none" href="#">Одежда</a></li>
+                        <li><a class="text-decoration-none" href="#">Обувь</a></li>
+                        <li><a class="text-decoration-none" href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Навигация</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Главная</a></li>
+                        <li><a class="text-decoration-none" href="#">Каталог</a></li>
+                        <li><a class="text-decoration-none" href="#">О нас</a></li>
+                        <li><a class="text-decoration-none" href="#">Поддержка</a></li>
+			<li><a class="text-decoration-none" href="#">Наше местоположение</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            ©️SPECOVKA CO., LTD. 2013, 2023 ALL RIGHTS RESERVED
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+	
+</body>
+
+</html>

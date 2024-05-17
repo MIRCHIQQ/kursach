@@ -1,0 +1,8 @@
+User-agent: Google
+Disallow: /search
+Disallow: /admin
+Disallow: /private
+Disallow: /writing
+Allow: /cache/*.css
+Allow: /*.jpg
+Allow: /*.png 
